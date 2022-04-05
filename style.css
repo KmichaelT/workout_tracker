@@ -31,10 +31,11 @@ body{
     height: 60px;
     width: 60px;
     border-radius: 15%;
-    background-color: rgb(0, 167, 36);
+    background-color: #00a724;
 }
   .pushop-icon{
       width: 40px;
+      filter: grayscale(100%);
       
   }
   .txt{
@@ -44,6 +45,7 @@ body{
     width: 25px;
     padding-top: 8px;
     padding-bottom: 7px;
+    filter: grayscale(100%);
     
 }
 h2{
