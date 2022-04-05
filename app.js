@@ -1,5 +1,14 @@
-var day = 0;
+var day = localStorage.getItem("days");
+counter=document.getElementById('number');
+counter.textContent=`${day}`
 const gridwrapper=document.getElementById('parent');
+const tracker=gridwrapper.children
+
+for (let i = 0; i < day; i++) {
+    tracker[i].setAttribute("class", "sqr-done position-relative text-center");
+    tracker[i].children[1].textContent='done'
+    tracker[i].children[0].setAttribute('style', 'filter: grayscale(0%);')
+  }
 
 gridwrapper.addEventListener('click', onclick);
 function onclick(e){
@@ -17,7 +26,8 @@ function onclick(e){
         }
         else{
         
-            e.target.parentElement.setAttribute("class", "sqr-done position-relative text-center")
+        e.target.parentElement.setAttribute("class", "sqr-done position-relative text-center")
+        e.target.parentElement.children[0].setAttribute('style', 'filter: grayscale(0%);')
         day++;
         counter=document.getElementById('number');
         label=document.getElementById('lbl');
@@ -33,6 +43,6 @@ function onclick(e){
           })
         
         }
-
+        localStorage.setItem("days",day)
     }
 }

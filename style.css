@@ -35,8 +35,9 @@ body{
 }
   .pushop-icon{
       width: 40px;
-      filter: grayscale(100%);
-      
+  }
+  .gray{
+    filter: grayscale(100%);
   }
   .txt{
       font-size: 13px;
@@ -44,10 +45,10 @@ body{
   .situp-icon{
     width: 25px;
     padding-top: 8px;
-    padding-bottom: 7px;
-    filter: grayscale(100%);
-    
+    padding-bottom: 7px;    
 }
+
+
 h2{
 width: 350px;
 font-weight: bold;
