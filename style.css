@@ -4,7 +4,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .header{
-    
+    background-color: rgb(255, 0, 0);
+    background: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 200px;
+  background-blend-mode: multiply;
     height: 200px;
     max-width: 412px;
 }
